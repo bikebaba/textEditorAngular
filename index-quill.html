@@ -25,7 +25,11 @@
 <div>
 
   <button ng-click="saveas()">Submit</button>
+
+    <input type="file" on-read-file="displayFileContents(contents)" /><br/>
 </div>
+
+
 <h3>This is a Great Text Editor Called Quill</h3>
 <pre><code>{{title}}</code></pre>
 <ng-quill-editor ng-model="title" on-editor-created="editorCreated(editor)"
